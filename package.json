@@ -1,0 +1,22 @@
+{
+	"name": "demo-shade",
+	"version": "1.0.0",
+	"description": "Legacy HTML template, repacked with eleventy.",
+	"scripts": {
+		"dev": "npx @11ty/eleventy --serve"
+	},
+	"author": "Hendri Juhanda",
+	"license": "MIT",
+	"devDependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"autoprefixer": "^10.4.17",
+		"esbuild": "^0.20.0",
+		"postcss": "^8.4.34",
+		"postcss-csso": "^6.0.1",
+		"postcss-import": "^16.0.0",
+		"postcss-media-minmax": "^5.0.0"
+	},
+	"dependencies": {
+		"jquery": "^1.12.4"
+	}
+}

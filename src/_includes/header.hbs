@@ -1,0 +1,168 @@
+<header>
+	<section id="user" class="row-fluid shadeUser">
+		<!-- sign in/up section -->
+		<div class="container">
+			<!-- link to user account, the idea is to switch between 'sign in/up' and this 'my account' depends on user login status -->
+			{{#if isLoggedIn}}
+
+			<ul class="pull-right inline">
+				<li><i class="icon-suitcase"></i></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+						>My Account <i class="icon-caret-down"></i
+					></a>
+					<ul class="dropdown-menu icons-ul pull-right">
+						<li>
+							<a href="profile.html"
+								><i class="icon-fixed-width icon-user"></i>Profile</a
+							>
+						</li>
+						<li>
+							<a href="index.html"
+								><i class="icon-fixed-width icon-signout"></i>Logout</a
+							>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			{{else}}
+
+			<ul class="pull-right inline">
+				<li><i class="icon-signin"></i></li>
+				<li><a href="sign-in.html">Sign In</a></li>
+				<li>|</li>
+				<li><a href="sign-up.html">Sign Up</a></li>
+			</ul>
+
+			{{/if}}
+		</div>
+		<!-- end of container -->
+	</section>
+	<!-- end of sign in/up section -->
+
+	<section id="banner" class="row-fluid shadeBanner">
+		<!-- banner, contain logo and social icons -->
+		<div class="container">
+			<div class="span6 shadeLogo">
+				<!-- website logo -->
+				<span
+					><a href="index.html"
+						><img src="img/logo/logo.png" alt="Shade Logo" /></a
+				></span>
+			</div>
+
+			<div id="social" class="span4 pull-right shadeSocial">
+				<!-- social media -->
+				<ul class="pull-right inline">
+					<li>
+						<a href="http://twitter.com" target="_blank"
+							><i class="icon-twitter"></i
+						></a>
+					</li>
+					<li>
+						<a href="http://facebook.com" target="_blank"
+							><i class="icon-facebook"></i
+						></a>
+					</li>
+					<li>
+						<a href="http://plus.google.com" target="_blank"
+							><i class="icon-google-plus"></i
+						></a>
+					</li>
+					<li>
+						<a href="http://pinterest.com" target="_blank"
+							><i class="icon-pinterest"></i
+						></a>
+					</li>
+					<li>
+						<a href="http://linkedin.com" target="_blank"
+							><i class="icon-linkedin"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+			<!-- end of social -->
+		</div>
+		<!-- end of container -->
+	</section>
+	<!-- end of banner -->
+
+	<nav id="mainNav" role="navigation" class="row-fluid shadeNav">
+		<!-- main navigation -->
+		<div class="container">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<form class="navbar-search pull-right">
+						<!-- search form -->
+						<input
+							type="text"
+							class="search-query shadeSearch"
+							placeholder="Search..."
+						/>
+					</form>
+
+					<a
+						class="btn btn-navbar"
+						data-toggle="collapse"
+						data-target=".nav-collapse"
+						><!-- navbar responsive toggle -->
+						<i class="icon-fixed-width icon-th-large"></i>
+					</a>
+
+					<div class="nav-collapse collapse">
+						<!-- navigation menu -->
+						<ul class="nav">
+							<li class="shadeStickyLogo">
+								<a href="index.html"
+									><img src="img/logo/logo2.png" alt="Shade Logo"
+								/></a>
+							</li>
+							<!-- logo will show up when sticky navigation function triggered, height of image will be forced to 15px, see '.shadeStickyLogo img' in css -->
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="service.html">Service</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown"
+									>Pages <i class="icon-caret-down"></i
+								></a>
+								<ul class="dropdown-menu">
+									<li><a href="gallery.html">Gallery</a></li>
+									<li><a href="project.html">Project</a></li>
+									<li><a href="faq.html">Faq</a></li>
+									<li><a href="term.html">Term</a></li>
+									<li><a href="sign-in.html">Sign In</a></li>
+									<li><a href="sign-up.html">Sign Up</a></li>
+									<li><a href="profile.html">Profile</a></li>
+									<li><a href="edit-profile.html">Edit Profile</a></li>
+									<li><a href="pass-reset.html">Password Reset</a></li>
+									<li><a href="404.html">Error</a></li>
+									<li><a href="doc.html">Documentation</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown"
+									>Blog <i class="icon-caret-down"></i
+								></a>
+								<ul class="dropdown-menu">
+									<li><a href="blog.html">Blog 1</a></li>
+									<li><a href="blog2.html">Blog 2</a></li>
+									<li><a href="blog-left.html">Blog Left</a></li>
+									<li><a href="blog-middle.html">Blog Middle</a></li>
+									<li><a href="blog-single.html">Blog Single</a></li>
+								</ul>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<!-- end of nav-collapse -->
+				</div>
+				<!-- end of navbar-inner -->
+			</div>
+			<!-- end of navbar -->
+		</div>
+		<!--end of container -->
+	</nav>
+	<!-- end of navigation -->
+</header>
