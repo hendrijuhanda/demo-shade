@@ -1,0 +1,82 @@
+---
+layout: base
+title: Sign Up
+permalink: /sign-up.html
+---
+
+{{> header isLoggedIn=true }}
+
+<div id="signUp" class="container">
+	<!-- sign up start -->
+	<div class="shadeSign well">
+		<!-- form container -->
+
+		<h3 class="text-center">Create Your Account</h3>
+
+		<hr />
+
+		<form class="form-horizontal">
+			<div class="control-group">
+				<label class="control-label" for="signUpName">Name</label>
+				<div class="controls">
+					<input type="text" id="signUpName" placeholder="Your Name" />
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="signUpEmail">Email</label>
+				<div class="controls">
+					<input type="text" id="signUpEmail" placeholder="Email" />
+				</div>
+			</div>
+
+			<br />
+
+			<div class="control-group">
+				<label class="control-label" for="signUpUser">Username</label>
+				<div class="controls">
+					<input type="text" id="signUpUser" placeholder="User Name" />
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="signUpPass">Password</label>
+				<div class="controls">
+					<input type="password" id="signUpPass" placeholder="Password" />
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="signUpConf">Confirm Password</label>
+				<div class="controls">
+					<input type="password" id="signUpConf" placeholder="Password" />
+				</div>
+			</div>
+
+			<div class="control-group">
+				<div class="controls">
+					<label class="checkbox">
+						<input type="checkbox" /> Agree with Terms and Conditions
+					</label>
+
+					<br />
+
+					<button type="submit" class="btn">Register</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- end of form container -->
+
+	<hr />
+
+	<ul class="inline text-center">
+		<!-- some text -->
+		<li>Read <a href="term.html">Terms and Conditions</a></li>
+		<li>|</li>
+		<li>Already have an Account? <a href="sign-in.html">Sign In</a></li>
+	</ul>
+</div>
+<!-- sign in end -->
+
+{{> footer }}

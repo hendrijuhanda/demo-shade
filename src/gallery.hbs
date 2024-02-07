@@ -1,0 +1,113 @@
+---
+layout: base
+title: Gallery
+permalink: /gallery.html
+---
+
+{{> header isLoggedIn=true }}
+
+<div id="gallery" class="container">
+	<!-- gallery -->
+	<ul class="breadcrumb">
+		<!-- breadcrumb -->
+		<li><a href="index.html">Home</a><span class="divider"> /</span></li>
+		<li><a href="index.html">Pages</a><span class="divider"> /</span></li>
+		<li class="active">Gallery</li>
+	</ul>
+
+	<div class="shadeMixControl">
+		<!-- mixitup control -->
+		<ul class="inline">
+			<li class="filter active" data-filter="all">Show All</li>
+			<li class="filter" data-filter="category1">Sunday</li>
+			<li class="filter" data-filter="category2">Monday</li>
+			<li class="filter" data-filter="category3">Tuesday</li>
+			<li class="filter" data-filter="category4">Wednesday</li>
+			<li class="filter" data-filter="category5">Thursday</li>
+			<li class="filter" data-filter="category6">Friday</li>
+			<li class="filter" data-filter="category7">Saturday</li>
+		</ul>
+	</div>
+
+	<hr />
+
+	<ul id="gal" class="thumbnails shadeProGrid">
+		<!-- picture gallery -->
+		<li class="span3 mix category1 category4 category6 mix_all" data-cat="1">
+			<!-- gallery content -->
+			<a href="img/thumb/img1.jpg" class="prettyphoto thumbnail">
+				<img alt="Gallery Image" src="img/thumb/img1.jpg" />
+			</a>
+		</li>
+		<li class="span3 mix category2 mix_all" data-cat="2">
+			<!-- gallery content -->
+			<a href="img/thumb/img2.jpg" class="prettyphoto thumbnail">
+				<img alt="Gallery Image" src="img/thumb/img2.jpg" />
+			</a>
+		</li>
+		<li class="span3 mix category3 category5 mix_all" data-cat="3">
+			<!-- gallery content -->
+			<a href="img/thumb/img3.jpg" class="prettyphoto thumbnail">
+				<img alt="Gallery Image" src="img/thumb/img3.jpg" />
+			</a>
+		</li>
+		<li class="span3 mix category3 category5 mix_all" data-cat="4">
+			<!-- gallery content -->
+			<a href="img/thumb/img4.jpg" class="prettyphoto thumbnail">
+				<img alt="Gallery Image" src="img/thumb/img4.jpg" />
+			</a>
+		</li>
+		<li class="span3 mix category1 category7 mix_all" data-cat="5">
+			<!-- gallery content -->
+			<a href="img/item/item1.png" class="prettyphoto thumbnail">
+				<img alt="Gallery Image" src="img/item/item1.png" />
+			</a>
+		</li>
+		<li class="span3 mix category2 category5 mix_all" data-cat="6">
+			<!-- gallery content -->
+			<a href="img/item/item2.png" class="prettyphoto thumbnail">
+				<img alt="Gallery Image" src="img/item/item2.png" />
+			</a>
+		</li>
+		<li class="span3 mix category1 category2 category3 mix_all" data-cat="7">
+			<!-- gallery content -->
+			<a href="img/item/item3.png" class="prettyphoto thumbnail">
+				<img alt="Gallery Image" src="img/item/item3.png" />
+			</a>
+		</li>
+		<li class="span3 mix category4 category7 mix_all" data-cat="8">
+			<!-- gallery content -->
+			<a href="img/item/item4.png" class="prettyphoto thumbnail">
+				<img alt="Gallery Image" src="img/item/item4.png" />
+			</a>
+		</li>
+		<li class="span3 mix category3 mix_all" data-cat="9">
+			<!-- gallery content -->
+			<a href="img/ava/ava1.jpg" class="prettyphoto thumbnail">
+				<img alt="Gallery Image" src="img/ava/ava1.jpg" />
+			</a>
+		</li>
+		<li class="span3 mix category4 category3 mix_all" data-cat="10">
+			<!-- gallery content -->
+			<a href="img/ava/ava2.jpg" class="prettyphoto thumbnail">
+				<img alt="Gallery Image" src="img/ava/ava2.jpg" />
+			</a>
+		</li>
+		<li class="span3 mix category3 category7 mix_all" data-cat="11">
+			<!-- gallery content -->
+			<a href="img/ava/ava3.jpg" class="prettyphoto thumbnail">
+				<img alt="Gallery Image" src="img/ava/ava3.jpg" />
+			</a>
+		</li>
+		<li class="span3 mix category4 category3 category6 mix_all" data-cat="12">
+			<!-- gallery content -->
+			<a href="img/ava/ava4.jpg" class="prettyphoto thumbnail">
+				<img alt="Gallery Image" src="img/ava/ava4.jpg" />
+			</a>
+		</li>
+	</ul>
+	<!-- picture gallery end -->
+</div>
+<!-- gallery end -->
+
+{{> footer }}

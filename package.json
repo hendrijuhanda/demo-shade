@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Legacy HTML template, repacked with eleventy.",
 	"scripts": {
+		"build": "npx @11ty/eleventy",
 		"dev": "npx @11ty/eleventy --serve"
 	},
 	"author": "Hendri Juhanda",

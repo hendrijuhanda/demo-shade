@@ -1,5 +1,6 @@
 ---
-title: "Shade | Bootstrap Template"
+title: ""
+isDocPage: false
 ---
 
 <!DOCTYPE html>
@@ -12,7 +13,10 @@ title: "Shade | Bootstrap Template"
 		<meta name="keywords" content="" />
 		<meta name="author" content="" />
 
-		<title>{{ title }}</title>
+		<title>
+			{{#if title}} Shade | {{title}} {{else}} Shade | Bootstrap Template
+			{{/if}}
+		</title>
 
 		<link rel="stylesheet" href="css/main.css" media="screen" />
 
@@ -23,17 +27,99 @@ title: "Shade | Bootstrap Template"
 			type="text/css"
 		/>
 
-		<!-- pretty photo style sheet -->
-		{{!--
-		<link rel="stylesheet" href="css/prettyPhoto.css" media="screen" />
-		--}}
-
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+		{{#if isDocPage}}
+
+		<style>
+			.shadeExample {
+				position: relative;
+				padding: 40px 10px 10px 10px;
+				border: 1px dashed #d9d9d9;
+				margin-bottom: 20px;
+			}
+			.shadeExample:before {
+				color: #d9d9d9;
+				font-weight: bold;
+				position: absolute;
+				padding: 5px;
+				background: #333;
+				top: -1px;
+				right: -1px;
+				content: "Example";
+			}
+			.shadeDoc {
+				width: 250px;
+			}
+			.shadeDoc.top {
+				position: fixed;
+				top: 45px;
+			}
+			.shadeDoc.top.bottom {
+				position: absolute;
+				bottom: 396px;
+				top: auto;
+			}
+			body {
+				position: relative;
+			}
+			@media (max-width: 767px) {
+				.shadeDoc {
+					width: auto;
+				}
+				.shadeDoc.top {
+					position: static;
+				}
+				.shadeDoc.top.bottom {
+					position: static;
+				}
+			}
+			@media screen and (min-width: 768px) and (max-width: 980px) {
+				.shadeDoc {
+					width: 196px;
+				}
+				.shadeDoc.top {
+					position: fixed;
+					top: 3px;
+				}
+				.shadeDoc.top.bottom {
+					position: absolute;
+					bottom: 478px;
+					top: auto;
+				}
+			}
+		</style>
+
+		{{/if}}
 	</head>
 
 	<body>
 		{{{ content }}}
 
 		<script src="js/main.js"></script>
+
+		{{#if isDocPage}}
+
+		<script>
+			$(window).scroll(function () {
+				// sticky sidebar
+				var windowH = $(this).innerHeight(),
+					docH = $(document).height() - $("footer").height();
+
+				if ($(this).scrollTop() > 204) {
+					$("#docNav").addClass("top");
+				} else {
+					$("#docNav").removeClass("top");
+				}
+
+				if ($(this).scrollTop() + windowH > docH) {
+					$("#docNav").addClass("bottom");
+				} else {
+					$("#docNav").removeClass("bottom");
+				}
+			});
+		</script>
+
+		{{/if}}
 	</body>
 </html>

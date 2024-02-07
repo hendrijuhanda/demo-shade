@@ -41,23 +41,6 @@ $(function () {
 			$("#backTop").slideUp();
 		}
 	});
-
-	//google map
-	if ($("#map").length) {
-		var map = new GMaps({
-			el: "#map",
-			lat: -6.868439,
-			lng: 107.592223,
-			zoomControlOpt: { style: "SMALL", position: "TOP_LEFT" },
-			panControl: false,
-		});
-
-		map.addMarker({
-			lat: -6.868439,
-			lng: 107.592223,
-			title: "Shade, Inc.",
-		});
-	}
 });
 
 //hide sticky logo at width < 767

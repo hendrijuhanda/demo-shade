@@ -1,10 +1,10 @@
 /* bootstrap style sheet */
-@import "../_assets/css/bootstrap.min.css";
-@import "../_assets/css/bootstrap-responsive.min.css";
+@import "../_assets/css/bootstrap.css";
+@import "../_assets/css/bootstrap-responsive.css";
 
 /* font awesome style sheet */
-@import "../_assets/css/font-awesome.min.css";
-@import "../_assets/css/font-awesome-ie7.min.css";
+@import "../_assets/css/font-awesome.css";
+@import "../_assets/css/font-awesome-ie7.css";
 
 /* jquery prettyphoto */
 @import "../_assets/css/prettyPhoto.css";

@@ -61,6 +61,11 @@ module.exports = (config) => {
 		},
 	});
 
+	// Server options
+	config.setServerOptions({
+		port: 3000,
+	});
+
 	return {
 		dir: {
 			input: "src",

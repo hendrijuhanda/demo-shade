@@ -1,0 +1,360 @@
+---
+layout: base
+title: Blog
+permalink: /blog-single.html
+---
+
+{{> header isLoggedIn=true }}
+
+<div id="blogSingle" class="container">
+	<ul class="breadcrumb">
+		<!-- breadcrumb -->
+		<li><a href="index.html">Home</a><span class="divider"> /</span></li>
+		<li class="active">Blog</li>
+	</ul>
+
+	<div class="row-fluid">
+		<!-- row -->
+		<div class="span8 shadeBlog">
+			<!-- articles container -->
+			<article>
+				<!-- article content -->
+				<h3>What have you done lately?</h3>
+
+				<ul class="inline">
+					<!-- blog post meta -->
+					<li><i class="icon-calendar"></i> 26 June</li>
+					<li><i class="icon-user"></i> Admin</li>
+					<li><i class="icon-folder-open"></i> <a href="#">Web Design</a></li>
+					<li><i class="icon-tag"></i> <a href="#">Responsive Design</a></li>
+					<li>
+						<i class="icon-comment"></i>
+						<a href="blog-single.html#comment">1 comment</a>
+					</li>
+				</ul>
+
+				<br />
+
+				<p><img src="img/slide/slide1.jpg" alt="Blog Post Thumbnail" /></p>
+
+				<p>
+					An fabellas apeirian ullamcorper vel, tollit placerat ex ius. Viris
+					vivendo mel ut, his id liber labore definitiones. Nec movet delenit
+					iracundia an. Conceptam philosophia eam eu.
+				</p>
+
+				<p>
+					Cum ut wisi putant everti, dicat aeque id qui. Sit ei quod putent
+					discere. Primis consequuntur in quo, cu reque necessitatibus sit.
+					Semper necessitatibus vim et, ei dolor altera philosophia duo. Ei duo
+					nostro deleniti, debet signiferumque et eos.
+				</p>
+
+				<p>
+					No timeam fabulas per. Fabulas abhorreant adipiscing mei ea, magna
+					pericula conceptam ei eos, impedit fastidii est an. Veri mutat atqui
+					sed et, quo debitis accusamus cu. Ne essent adversarium pro, est ut
+					autem dolorum convenire. Vim an ridens partiendo assueverit, persius
+					persequeris ei has. No eum numquam argumentum cotidieque, eu accusam
+					fierent ancillae mei, sit mundi libris et.
+				</p>
+
+				<p>
+					At tamquam discere quaestio ius, homero nullam legere et his. In
+					facilisis efficiantur quo, ne ius meis urbanitas, altera utroque ei
+					qui. Quot omnesque interpretaris et vel, eam eu primis minimum. Sea
+					sumo elitr ad, ad cum hinc rebum vidisse. Lorem phaedrum ex mei, no
+					sed sale corpora explicari.
+				</p>
+
+				<p>
+					Ne nec falli ceteros perfecto, delectus iracundia nam ea, in nec
+					electram interesset. Id cum probo novum facilis, cum admodum oporteat
+					ad, tempor labores vel ex. Vim ea doming habemus, sea ad graecis
+					commune suscipit. Ea mandamus perpetua has, mei albucius salutatus ut.
+					Fierent complectitur ut usu.
+				</p>
+
+				<p>
+					Ut brute eripuit nam. Vim ex vitae comprehensam. Ut vel modo fugit,
+					pro civibus volutpat ad, graece doming vel at. An tamquam moderatius
+					scripserit mel, pro ea labore nonumes accumsan. Decore euismod te pri,
+					tation labitur senserit ad vel. Mel minim adipisci vituperata in.
+				</p>
+			</article>
+
+			<ul class="pager">
+				<!-- page control -->
+				<li class="previous disabled">
+					<a href="#"><i class="icon-double-angle-left"></i> Older</a>
+				</li>
+				<li class="next">
+					<a href="#">Newer <i class="icon-double-angle-right"></i></a>
+				</li>
+			</ul>
+
+			<hr />
+
+			<div id="comment">
+				<!-- comment section -->
+				<h4>Comments</h4>
+
+				<div class="media">
+					<!-- media container -->
+					<img
+						style="width: 64px"
+						class="pull-left media-object"
+						src="img/ava/ava1.jpg"
+						alt="Avatar"
+					/><!-- visitor ava -->
+					<div class="media-body">
+						<!-- comment content -->
+						<h5>Burik Hartjo</h5>
+						<p>Posted on 27 June, 2013</p>
+						<br />
+						<p>
+							Modus forensibus per te. Pro ex dictas aperiam mediocrem, audire
+							appellantur comprehensam in per, eu feugait erroribus vituperata
+							eum.
+						</p>
+						<p class="pull-right"><a href="#">Reply</a></p>
+
+						<div class="clearfix"></div>
+
+						<hr />
+					</div>
+
+					<img
+						style="width: 64px"
+						class="media-object pull-left"
+						src="img/ava/ava2.jpg"
+						alt="Avatar"
+					/><!-- visitor ava -->
+					<div class="media-body">
+						<!-- comment content -->
+						<h5>Suki Min</h5>
+						<p>Posted on 26 June, 2013</p>
+						<br />
+						<p>Agam legere deterruisset in vix?</p>
+						<p class="pull-right"><a href="#">Reply</a></p>
+
+						<div class="clearfix"></div>
+
+						<div class="media">
+							<!-- nested comment -->
+							<img
+								style="width: 64px"
+								class="pull-left media-object"
+								src="img/ava/ava4.jpg"
+								alt="Avatar"
+							/><!-- visitor ava -->
+							<div class="media-body">
+								<!-- comment content -->
+								<h5>Sun Dong Yang</h5>
+								<p>Posted on 27 June, 2013</p>
+								<br />
+								<p>
+									Nec doming omittantur liberavisse et, eius paulo accusam id
+									eum :p
+								</p>
+								<p class="pull-right"><a href="#">Reply</a></p>
+							</div>
+						</div>
+
+						<div class="clearfix"></div>
+					</div>
+
+					<hr />
+				</div>
+
+				<div class="clearfix"></div>
+
+				<h4>Add Comment</h4>
+
+				<form class="form-horizontal">
+					<!-- add comment form -->
+					<div class="control-group">
+						<label class="control-label" for="commentName">Name</label>
+						<div class="controls">
+							<input class="span12" type="text" id="commentName" />
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label" for="commentEmail">Email</label>
+						<div class="controls">
+							<input class="span12" type="text" id="commentEmail" />
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label class="control-label" for="commentComment">Comment</label>
+						<div class="controls">
+							<textarea class="span12" rows="5" id="commentComment"></textarea>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<div class="controls">
+							<button type="submit" class="btn">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- comment end -->
+		</div>
+		<!-- article container end -->
+
+		<aside class="span4">
+			<!-- sidebar container -->
+			<div class="shadeSideBar">
+				<!-- sidebar content block -->
+				<h4>Categories</h4>
+
+				<hr />
+
+				<ul class="icons-ul">
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">Web Design</a> (11)
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">Web Development</a> (9)
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">SEO</a> (13)
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">CMS</a> (6)
+					</li>
+				</ul>
+			</div>
+
+			<div class="shadeSideBar">
+				<!-- sidebar content block -->
+				<h4>Recent Posts</h4>
+
+				<hr />
+
+				<ul class="icons-ul">
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">What have you done lately?</a>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">New theme available!</a>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">10 useful media queries tricks</a>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">The first love will never die</a>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">I need money right now</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="shadeSideBar">
+				<!-- sidebar content block -->
+				<h4>Popular Posts</h4>
+
+				<hr />
+
+				<ul class="icons-ul">
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">The first love will never die</a>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">New theme available!</a>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">I need money right now</a>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">What have you done lately?</a>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">10 useful media queries tricks</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="shadeSideBar">
+				<!-- sidebar content block -->
+				<h4>Recent Comments</h4>
+
+				<hr />
+
+				<ul class="icons-ul">
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="blog-single.html#comment">Paula</a> on
+						<a href="blog-single.html#comment">What have you done lately?</a>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="blog-single.html#comment">Boris</a> on
+						<a href="blog-single.html#comment">What have you done lately?</a>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="blog-single.html#comment">Tatang</a> on
+						<a href="blog-single.html#comment">The first love will never die</a>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="blog-single.html#comment">Nande</a> on
+						<a href="blog-single.html#comment"
+							>10 useful media queries tricks</a
+						>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="blog-single.html#comment">Ujang</a> on
+						<a href="blog-single.html#comment">I need money right now</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="shadeSideBar">
+				<!-- sidebar content block -->
+				<h4>Archive</h4>
+
+				<hr />
+
+				<ul class="icons-ul">
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">June 2013</a>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">May 2013</a>
+					</li>
+					<li>
+						<i class="icon-li icon-double-angle-right"></i
+						><a href="#">April 2013</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+	</div>
+	<!-- row end -->
+</div>
+<!-- blog end -->
+
+{{> footer }}

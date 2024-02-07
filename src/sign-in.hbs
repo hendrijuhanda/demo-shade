@@ -1,0 +1,59 @@
+---
+layout: base
+title: Sign In
+permalink: /sign-in.html
+---
+
+{{> header isLoggedIn=true }}
+
+<div id="signIn" class="container">
+	<!-- sign in start -->
+	<div class="shadeSign well">
+		<!-- form container -->
+
+		<h3 class="text-center">Sign In to Your Account</h3>
+
+		<hr />
+
+		<form class="form-horizontal">
+			<div class="control-group">
+				<label class="control-label" for="signInName">Name</label>
+				<div class="controls">
+					<input type="text" id="signInName" placeholder="Your Name" />
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="signInEmail">Email</label>
+				<div class="controls">
+					<input type="text" id="signInEmail" placeholder="Email" />
+				</div>
+			</div>
+
+			<div class="control-group">
+				<div class="controls">
+					<label class="checkbox">
+						<input type="checkbox" /> Remember me
+					</label>
+
+					<br />
+
+					<button type="submit" class="btn">Login</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- end of form container -->
+
+	<hr />
+
+	<ul class="inline text-center">
+		<!-- some text -->
+		<li>Don't have an account? Please <a href="sign-up.html">Register</a></li>
+		<li>|</li>
+		<li><a href="pass-reset.html">Forgot password?</a></li>
+	</ul>
+</div>
+<!-- sign in end -->
+
+{{> footer }}

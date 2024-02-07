@@ -1,0 +1,56 @@
+---
+layout: base
+title: Profile
+permalink: /profile.html
+---
+
+{{> header isLoggedIn=true }}
+
+<div id="profile" class="container">
+	<!-- profile start -->
+	<div class="shadeSign well">
+		<!-- profile container -->
+
+		<h3 class="text-center">Your Profile</h3>
+
+		<hr />
+
+		<div class="media">
+			<!-- profile content -->
+			<img
+				style="width: 256px"
+				alt="Post Thumbnail"
+				class="pull-left media-object"
+				src="img/ava/ava1.jpg"
+			/>
+			<div class="media-body">
+				<h4 class="media-heading">Burik Hartjo</h4>
+				<address>
+					<strong>Shade, Inc.</strong>
+					<br />
+					Mid Gegerkalong V 59
+					<br />
+					Bandung, West Java
+					<br />
+					<br />
+					<i class="icon-phone"></i> 022-7766XX
+					<br />
+					<i class="icon-envelope"></i> shade@email.com
+				</address>
+			</div>
+		</div>
+	</div>
+	<!-- end of profile container -->
+
+	<hr />
+
+	<ul class="inline text-center">
+		<!-- some text -->
+		<li>
+			Update your information, <a href="edit-profile.html">Edit Profile</a>
+		</li>
+	</ul>
+</div>
+<!-- profile end -->
+
+{{> footer }}

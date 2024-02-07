@@ -1,0 +1,103 @@
+---
+layout: base
+title: Blog
+permalink: /contact.html
+---
+
+{{> header isLoggedIn=true }}
+
+<div id="contact" class="container">
+	<!-- contact start -->
+	<ul class="breadcrumb">
+		<!-- breadcrumb -->
+		<li><a href="index.html">Home</a><span class="divider"> /</span></li>
+		<li class="active">Contact</li>
+	</ul>
+
+	<div class="row-fluid">
+		<!-- row contains contact form and address -->
+		<div class="span5 well shadeForm">
+			<!-- contact form -->
+
+			<h4>Contact Form</h4>
+			<!-- contact form header -->
+
+			<hr />
+
+			<form class="form-horizontal">
+				<div class="control-group">
+					<label class="control-label" for="contactName">Name</label>
+					<div class="controls">
+						<input class="span12" type="text" id="contactName" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label" for="contactEmail">Email</label>
+					<div class="controls">
+						<input class="span12" type="text" id="contactEmail" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label" for="contactMessage">Message</label>
+					<div class="controls">
+						<textarea class="span12" rows="13" id="contactMessage"></textarea>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<div class="controls">
+						<button type="submit" class="btn">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- contact form end -->
+
+		<div class="span7 well shadeForm">
+			<!-- address -->
+
+			<h4>Address</h4>
+
+			<hr />
+
+			<address>
+				<strong>Shade, Inc.</strong>
+				<br />
+				Mid Gegerkalong V 59
+				<br />
+				Bandung, West Java
+				<br />
+				<br />
+				<i class="icon-phone"></i> 022-7766XX
+				<br />
+				<i class="icon-envelope"></i> shade@email.com
+			</address>
+
+			<div id="map" class="shadeMap google-map">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253572.68357381187!2d108.42049448374364!3d-6.760931271960494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1d0f69dbc5d5%3A0x301e8f1fc28ba20!2sCirebon%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1707284755432!5m2!1sen!2sid"
+					style="border: 0; width: 100%; height: 100%"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+			</div>
+			<!-- embed map -->
+
+			<br />
+
+			<p class="pull-right">
+				See on
+				<a href="http://goo.gl/maps/tltCf" target="_blank">Google Maps</a>
+			</p>
+			<!-- link to google map -->
+		</div>
+		<!-- address end -->
+	</div>
+	<!-- row end -->
+</div>
+<!-- contact end -->
+
+{{> footer }}
