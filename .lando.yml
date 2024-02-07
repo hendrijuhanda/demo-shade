@@ -17,3 +17,7 @@ tooling:
 proxy:
   nginx:
     - demo-shade.lndo.site
+events:
+  post-start:
+    - node:
+        - npm install && npm run build
